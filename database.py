@@ -3,9 +3,9 @@ import streamlit as st
 import os
 
 def get_conn():
-    # Uses Streamlit secrets in production, falls back to os.environ locally
     return mysql.connector.connect(
         host=st.secrets.get("DB_HOST", os.environ.get("DB_HOST")),
+        port=st.secrets.get("DB_PORT", 3306),  # <-- ADD THIS LINE
         user=st.secrets.get("DB_USER", os.environ.get("DB_USER")),
         password=st.secrets.get("DB_PASS", os.environ.get("DB_PASS")),
         database=st.secrets.get("DB_NAME", os.environ.get("DB_NAME")),
