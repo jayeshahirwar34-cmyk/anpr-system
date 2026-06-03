@@ -1,0 +1,8 @@
+streamlit
+ultralytics
+easyocr
+deep-sort-realtime
+mysql-connector-python
+reportlab
+opencv-python-headless
+pandas
