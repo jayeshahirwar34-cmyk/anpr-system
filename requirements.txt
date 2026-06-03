@@ -6,3 +6,4 @@ mysql-connector-python
 reportlab
 opencv-python-headless
 pandas
+yt-dlp
